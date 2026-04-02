@@ -1,12 +1,15 @@
 
 package quizproject;
 
-public class Answer {
+public class Answerclass {
 private String userResponse;
 public String getResponse(){
     
     return this.userResponse;
     
+}
+public void setResponse(String response){
+  this.userResponse=response;
 }
     
 }
