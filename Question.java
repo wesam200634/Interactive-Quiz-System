@@ -3,7 +3,7 @@ package quizproject;
 public abstract class Question {
 
     private String questionText;
-    private String correctAnswer;
+    protected String correctAnswer;
     private double points;
     private double timeLimit;
 
