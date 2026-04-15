@@ -1,0 +1,76 @@
+[
+  {
+    "type": "MultipleChoice",
+    "question_text": "Which keyword is used to inherit a class in Java?",
+    "correct_ans": "extends",
+    "points": 1.0,
+    "timeLimit": 20,
+    "choices": ["implements", "extends", "inherits", "super"]
+  },
+  {
+    "type": "TrueFalse",
+    "question_text": "Java supports multiple inheritance of classes directly.",
+    "correct_ans": "False",
+    "points": 1.0,
+    "timeLimit": 15
+  },
+  {
+    "type": "FillInTheBlank",
+    "question_text": "The method used to start a Java application is ______.",
+    "correct_ans": "main",
+    "points": 1.0,
+    "timeLimit": 20
+  },
+  {
+    "type": "MultipleChoice",
+    "question_text": "Which collection does not allow duplicate elements?",
+    "correct_ans": "Set",
+    "points": 1.0,
+    "timeLimit": 20,
+    "choices": ["List", "Queue", "Set", "Map"]
+  },
+  {
+    "type": "TrueFalse",
+    "question_text": "A constructor can have the same name as its class.",
+    "correct_ans": "True",
+    "points": 1.0,
+    "timeLimit": 15
+  },
+  {
+    "type": "FillInTheBlank",
+    "question_text": "The package that contains ArrayList is java.util.______.",
+    "correct_ans": "ArrayList",
+    "points": 1.0,
+    "timeLimit": 20
+  },
+  {
+    "type": "MultipleChoice",
+    "question_text": "Which access modifier makes a member available only inside the same class?",
+    "correct_ans": "private",
+    "points": 1.0,
+    "timeLimit": 20,
+    "choices": ["public", "protected", "private", "default"]
+  },
+  {
+    "type": "TrueFalse",
+    "question_text": "Interfaces can contain abstract methods in Java.",
+    "correct_ans": "True",
+    "points": 1.0,
+    "timeLimit": 15
+  },
+  {
+    "type": "FillInTheBlank",
+    "question_text": "The operator used to create a new object in Java is ______.",
+    "correct_ans": "new",
+    "points": 1.0,
+    "timeLimit": 20
+  },
+  {
+    "type": "MultipleChoice",
+    "question_text": "Which exception is commonly thrown when dividing by zero with integers in Java?",
+    "correct_ans": "ArithmeticException",
+    "points": 1.0,
+    "timeLimit": 20,
+    "choices": ["NullPointerException", "ArithmeticException", "IOException", "ClassCastException"]
+  }
+]
