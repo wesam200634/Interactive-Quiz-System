@@ -48,7 +48,7 @@ public class User {
      * @return score as string
      */
     public String getScore() {
-        return String.format("%.2f", score);
+        return String.format("%.2f", score);// Format score to 2 decimal places for clean display
     }
 
     /**
@@ -56,7 +56,7 @@ public class User {
      *
      * @param score score text
      */
-    public void setScore(String score) {
+    public void setScore(String score) { // Attempts to convert the input string to a double,if invalid, catches the error and sets score to 0.0
         try {
             this.score = Double.parseDouble(score);
         } catch (NumberFormatException ex) {
@@ -77,7 +77,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password == null ? "" : password;
+        this.password = password == null ? "" : password;// Assigns the given password; prevents null by replacing it with an empty string
     }
 
     public boolean isBanned() {
@@ -93,6 +93,6 @@ public class User {
     }
 
     public void setBanReason(String banReason) {
-        this.banReason = banReason == null ? "" : banReason;
+        this.banReason = banReason == null ? "" : banReason;// same as the password,making the null empty string to avoid errors
     }
 }
