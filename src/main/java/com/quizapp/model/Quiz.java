@@ -22,24 +22,24 @@ public class Quiz {
     public Quiz(User user, String title) {
         this.user = user;
         this.title = title;
-        this.questions = new ArrayList<>();
-        this.answers = new ArrayList<>();
-        this.bank = new ArrayList<>();
+        this.questions = new ArrayList<>();//making new questions Arraylist
+        this.answers = new ArrayList<>();//making new answered Arraylist
+        this.bank = new ArrayList<>();//making new questionsbank Arraylist
         this.numberOfQuestions = 0;
     }
 
     public User getUser() {
-        return user;
+        return user; // Returns the user associated with this quiz
     }
 
     public void AddToBank(Question q) {
         if (q != null) {
-            bank.add(q);
+            bank.add(q); //adding the question to the questionbank
         }
     }
 
     public ArrayList<Question> getBank() {
-        return new ArrayList<>(bank);
+        return new ArrayList<>(bank); // Returns a copy of the bank to protect internal data from modification
     }
 
     public String getTitle() {
@@ -55,10 +55,10 @@ public class Quiz {
      *
      * @return answer strings
      */
-    public ArrayList<String> getAnswers() {
+    public ArrayList<String> getAnswers() { // returns a list of answer responses as strings, replacing null answers with empty strings
         ArrayList<String> values = new ArrayList<>();
         for (Answer answer : answers) {
-            values.add(answer == null ? "" : answer.getResponse());
+            values.add(answer == null ? "" : answer.getResponse()); 
         }
         return values;
     }
@@ -67,20 +67,20 @@ public class Quiz {
         return answers;
     }
 
-    public void setQuestions(ArrayList<Question> questions) {
+    public void setQuestions(ArrayList<Question> questions) { // Sets questions safely (avoids null) and updates the number of questions
         this.questions = questions == null ? new ArrayList<>() : questions;
         this.numberOfQuestions = this.questions.size();
     }
 
     public void setAnswers(ArrayList<Answer> answers) {
-        this.answers = answers == null ? new ArrayList<>() : answers;
+        this.answers = answers == null ? new ArrayList<>() : answers;// Sets answers safely (avoids null)
     }
 
-    public int getNumberOfQuestions() {
+    public int getNumberOfQuestions() { // Returns the number of questions
         return numberOfQuestions;
     }
 
-    public void setNumberOfQuestions(int numberOfQuestions) {
+    public void setNumberOfQuestions(int numberOfQuestions) { // Sets the number of questions
         this.numberOfQuestions = numberOfQuestions;
     }
 
@@ -89,14 +89,14 @@ public class Quiz {
      *
      * @return earned score
      */
-    public double checkAnswers() {
+    public double checkAnswers() {     // Checks all answers, calculates total score based on correct responses
         double total = 0.0;
-        int bound = Math.min(questions.size(), answers.size());
-        for (int i = 0; i < bound; i++) {
-            Question question = questions.get(i);
-            Answer answer = answers.get(i);
-            if (question != null && question.checkAnswer(answer)) {
-                total += question.getPoints();
+        int bound = Math.min(questions.size(), answers.size());     //taking the minmum for protection,in case some question or answer deleted
+        for (int i = 0; i < bound; i++) {    // walk throught every question
+            Question question = questions.get(i);    // taking i question
+            Answer answer = answers.get(i);    //taking i answer
+            if (question != null && question.checkAnswer(answer)) {     // checking if the answer of this question is true,as long as its not null
+                total += question.getPoints();    //if its true,increasing the points
             }
         }
         return total;
