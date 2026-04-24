@@ -33,7 +33,7 @@ public abstract class Question {
      *
      * @return type name
      */
-    public abstract String getType();
+    public abstract String getType();     //Returns the type of the question.
 
     /**
      * Manual shuffle hook required by UML.
@@ -49,7 +49,7 @@ public abstract class Question {
      * @param a answer to check
      * @return true when correct
      */
-    public abstract boolean checkAnswer(Answer a);
+    public abstract boolean checkAnswer(Answer a);     //Checks whether the provided answer is correct
 
     /**
      * Normalizes text for robust comparisons.
@@ -57,7 +57,7 @@ public abstract class Question {
      * @param text value to normalize
      * @return normalized string
      */
-    protected String normalize(String text) {
+    protected String normalize(String text) {     // Replace multiple spaces (and whitespace) with a single space
         return text == null ? "" : text.trim().replaceAll("\\s+", " ").toLowerCase();
     }
 
@@ -67,13 +67,14 @@ public abstract class Question {
      * @param values values to shuffle
      */
     protected void shuffleList(List<String> values) {
-    if (values == null || values.size() <= 1) return;
+    if (values == null || values.size() <= 1) return;     //if its null or there is one no need to shuffle
 
-    for (int i = values.size() - 1; i > 0; i--) {
-        int j = (int) (Math.random() * (i + 1));
+    for (int i = values.size() - 1; i > 0; i--) {      // Loop from the last index down to 1(to not move same value more than once)
+        int j = (int) (Math.random() * (i + 1));    
+        // Generate a random index between 0 and i
 
         // swap
-        String temp = values.get(i);
+        String temp = values.get(i);     // Swap element at index i with element at index j
         values.set(i, values.get(j));
         values.set(j, temp);
     }
