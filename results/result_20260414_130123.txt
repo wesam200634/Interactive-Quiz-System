@@ -1,0 +1,46 @@
+User: yazan
+Quiz: Java Programming Quiz
+Score: 1.0
+Time Taken (seconds): 56
+
+Review:
+1. A constructor can have the same name as its class.
+   User Answer: False
+   Correct Answer: True
+   Result: Wrong
+2. The package that contains ArrayList is java.util.______.
+   User Answer: nobe
+   Correct Answer: ArrayList
+   Result: Wrong
+3. Which exception is commonly thrown when dividing by zero with integers in Java?
+   User Answer: ArithmeticException
+   Correct Answer: ArithmeticException
+   Result: Correct
+4. Which access modifier makes a member available only inside the same class?
+   User Answer: protected
+   Correct Answer: private
+   Result: Wrong
+5. Interfaces can contain abstract methods in Java.
+   User Answer: False
+   Correct Answer: True
+   Result: Wrong
+6. The method used to start a Java application is ______.
+   User Answer: mb kj;bnkj;bn
+   Correct Answer: main
+   Result: Wrong
+7. Java supports multiple inheritance of classes directly.
+   User Answer: True
+   Correct Answer: False
+   Result: Wrong
+8. Which collection does not allow duplicate elements?
+   User Answer: List
+   Correct Answer: Set
+   Result: Wrong
+9. The operator used to create a new object in Java is ______.
+   User Answer: b j;ebr bjq
+   Correct Answer: new
+   Result: Wrong
+10. Which keyword is used to inherit a class in Java?
+   User Answer: super
+   Correct Answer: extends
+   Result: Wrong

@@ -1,0 +1,46 @@
+User: yazan
+Quiz: Java Programming Quiz
+Score: 5.0
+Time Taken (seconds): 63
+
+Review:
+1. Which keyword is used to inherit a class in Java?
+   User Answer: extends
+   Correct Answer: extends
+   Result: Correct
+2. A constructor can have the same name as its class.
+   User Answer: True
+   Correct Answer: True
+   Result: Correct
+3. Which exception is commonly thrown when dividing by zero with integers in Java?
+   User Answer: ArithmeticException
+   Correct Answer: ArithmeticException
+   Result: Correct
+4. The package that contains ArrayList is java.util.______.
+   User Answer: fndbnaluhneruo;b
+   Correct Answer: ArrayList
+   Result: Wrong
+5. Which collection does not allow duplicate elements?
+   User Answer: Queue
+   Correct Answer: Set
+   Result: Wrong
+6. The operator used to create a new object in Java is ______.
+   User Answer: mknebsoinbro
+   Correct Answer: new
+   Result: Wrong
+7. The method used to start a Java application is ______.
+   User Answer:  jl sbnon
+   Correct Answer: main
+   Result: Wrong
+8. Interfaces can contain abstract methods in Java.
+   User Answer: True
+   Correct Answer: True
+   Result: Correct
+9. Java supports multiple inheritance of classes directly.
+   User Answer: True
+   Correct Answer: False
+   Result: Wrong
+10. Which access modifier makes a member available only inside the same class?
+   User Answer: private
+   Correct Answer: private
+   Result: Correct

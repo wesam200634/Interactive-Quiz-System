@@ -1,0 +1,46 @@
+User: yazan
+Quiz: Java Programming Quiz
+Score: 2.0
+Time Taken (seconds): 24
+
+Review:
+1. Which access modifier makes a member available only inside the same class?
+   User Answer: public
+   Correct Answer: private
+   Result: Wrong
+2. The method used to start a Java application is ______.
+   User Answer: 
+   Correct Answer: main
+   Result: Wrong
+3. Which keyword is used to inherit a class in Java?
+   User Answer: implements
+   Correct Answer: extends
+   Result: Wrong
+4. A constructor can have the same name as its class.
+   User Answer: True
+   Correct Answer: True
+   Result: Correct
+5. The package that contains ArrayList is java.util.______.
+   User Answer: kljaowrjo
+   Correct Answer: ArrayList
+   Result: Wrong
+6. Which exception is commonly thrown when dividing by zero with integers in Java?
+   User Answer: IOException
+   Correct Answer: ArithmeticException
+   Result: Wrong
+7. Which collection does not allow duplicate elements?
+   User Answer: Map
+   Correct Answer: Set
+   Result: Wrong
+8. The operator used to create a new object in Java is ______.
+   User Answer: 
+   Correct Answer: new
+   Result: Wrong
+9. Java supports multiple inheritance of classes directly.
+   User Answer: True
+   Correct Answer: False
+   Result: Wrong
+10. Interfaces can contain abstract methods in Java.
+   User Answer: True
+   Correct Answer: True
+   Result: Correct
