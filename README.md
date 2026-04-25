@@ -41,8 +41,16 @@ src/test/java/com/quizapp
 ## Run
 
 ```bash
+mvn -v
 mvn clean test
 mvn javafx:run
+```
+
+If `mvn` is not recognized, install **Apache Maven** and make sure it’s on your PATH (then reopen your terminal/IDE).
+On Windows, you can install Maven with:
+
+```powershell
+winget install Apache.Maven
 ```
 
 ## Notes About the Design
